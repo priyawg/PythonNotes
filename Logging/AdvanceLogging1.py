@@ -12,6 +12,7 @@ source: https://www.youtube.com/watch?v=jxmzY9soFXg
 """ 
 
 import logging
+import numpy as np
 
 logger = logging.getLogger(__name__)    # If logger doesn't exists, it creates new one else update
 logger.setLevel(logging.DEBUG)
@@ -37,6 +38,8 @@ def div(x,y):
         z = x/y
     except ZeroDivisionError as e:
         logger.exception(f'div: {x}/{y} = {e}')
+    except Exception as e:
+        logger.error(e)
     else:
         logger.info(f'div: {x}/{y}={z}')
         return z
@@ -44,8 +47,10 @@ def div(x,y):
 num_1 = 3
 num_2 = 4
 num_3 = 0
+num_4 = np.inf
 
 result_add = add(num_1,num_3)
 result_div = div(num_2,num_3)
 result_div2 = div(num_1,num_2)
+result_div3 = div(num_1,num_4)
 
