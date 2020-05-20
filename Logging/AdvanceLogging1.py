@@ -7,6 +7,8 @@ behavious of logging of file 1. We can avoid this situation by
 using handlers by assigning logging to a variable and use 
 it instead of just logging.
 
+source: https://www.youtube.com/watch?v=jxmzY9soFXg
+
 """ 
 
 import logging
