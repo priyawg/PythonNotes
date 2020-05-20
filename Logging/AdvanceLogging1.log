@@ -1,0 +1,7 @@
+2020-05-20 12:57:11,801:__main__:INFO:add: 3+0=3
+2020-05-20 12:57:11,801:__main__:ERROR:div: 4/0 = division by zero
+Traceback (most recent call last):
+  File "c:/Users/User/Documents/localgit/PythonNotes/Notebooks/Logging/AdvanceLogging1.py", line 35, in div
+    z = x/y
+ZeroDivisionError: division by zero
+2020-05-20 12:57:11,801:__main__:INFO:div: 3/4=0.75
